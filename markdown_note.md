@@ -36,7 +36,7 @@ c.向量的负数：大小相等、方向相反
 ### 2.3 矢量分量和单位响亮
 a.矢量分量：将一个二维向量分为和x、y轴两部分
 $$
-A^{2} = A^{2}_{x} + A^{2}_{y}  {\quad}和{\quad}  θ = tan^{-1}({A_{y} \over A_{x}})
+A^{2} = A^{2}_{x} + A^{2}_{y}  {\quad}和{\quad}  \color{red}θ = tan^{-1}({A_{y} \over A_{x}})
 $$
 b.单位向量：长度为1的向量
 $$
@@ -63,9 +63,9 @@ a.主要讲解了二维和三维向量的分解与合并
 # Part 2
 
 
-## 3 MotioninOneDimension（一维运动）
+## 3 Motion in One Dimension（一维运动）
 
-### 3.1 Position andDisplacemen（位置和位移）
+### 3.1 Position and Displacemen（位置和位移）
 需要参照物（坐标轴等）
 a.位置：标量
 b.位移：向量
@@ -83,7 +83,7 @@ b.速率：定义为其速度大小
 a.平均加速度（矢量）：速度变化 / 时间间隔
 b.瞬时加速度（矢量）：当t接近0时 v / t 的极限值
 $$
-a = {dv \over dt} = {d^{2}x \over dt^{2}} = v_{f} - v_{i} = \int_{t_{i}}^{t_{f}}adt
+\color{red}a = {dv \over dt} = {d^{2}x \over dt^{2}} = v_{f} - v_{i} = \int_{t_{i}}^{t_{f}}adt
 $$
 
 ### 3.5 Constant Acceleration（恒定加速度）
@@ -100,3 +100,66 @@ $$
 ### 3.6 Free Fall（自由落体）
 地球表面附近的物体且空气阻力影响非常小时 $\Rightarrow$ 自由落体运动
 此时g = 9.8 $m/s^{2}$
+
+
+## 4 Motion in Two Dimension（二维运动）
+
+### 4.1  Position,Displacement,Velocity,and AccelerationVectors（位置，位移，速度和加速度矢量）
+a.置换向量：位移向量 = 最终位置向量 - 初始位置向量
+b.平均速度：v的维度是长度除以时间，是一个向量，大小和方向沿位移矢量
+c.瞬时速度：位移变化 / 时间间隔
+d.平均加速度：速度变化 / 时间间隔
+e.瞬时加速度：当t接近0时 v / t 的极限值
+（将数值换成向量，且：
+$$
+\color{red}\overrightarrow{a} = a_{x}\overrightarrow{i} + a_{y}\overrightarrow{j}
+$$
+
+### 4.2  Projectile Motion（弹射物运动）
+重力引起的加速度恒定、空气阻力不计：
+1.水平和垂直运动独立
+2.弹丸轨迹总是抛物线
+a.抛体的水平运动
+$$
+x = v_{xo}t = (v_ocosθ_o)t
+$$
+b.弹射物的垂直运动
+$$
+y = v_{yo}t - {1 \over 2}gt^2 = (v_osinθ_o)t - {1 \over 2}gt^2\\ 
+v_y^2 = v_{yo}^2 - 2gy = (v_osinθ_o)^2 - 2gy
+$$
+c.水平射程投射物
+$$
+T = {2v_osinθ_o \over g}\\
+R = {v_o^2sin2θ_o \over g}, 0 \leq θ_o \leq π/2
+$$
+d.发射物的最大高度
+$$
+H = {v_o^2sin^2θ_o \over g}, 0 \leq θ_o \leq π/2
+$$
+e.轨迹方程式
+$$
+y = {-g \over 2v_o^2sin^2θ_o}x^2 + (tanθ_o)x, 0 \leq θ_o \leq π/2
+$$
+
+### 4.3 UniformCircular Motion（均匀圆周运动）
+$$
+a_r = {v^2 \over r} （向心加速度）\\
+T = {2πr \over v} （周期）
+$$
+
+### 4.4 Tangential andRadialAcceleration（切向加速度和径向加速度）
+粒子速度的方向和大小都发生变化时可解析为两个分量向量：$\color{red}切向分量向量$和$\color{red}径向分量向量$
+$$
+\overrightarrow{a} = \overrightarrow{a_t} + \overrightarrow{a_r}
+$$
+
+### 4.5  Non-uniformCircular Motion（非均匀圆周运动）
+$$
+\overrightarrow{a} = \overrightarrow{a_t} + \overrightarrow{a_r} = {dv \over dt}\overrightarrow{θ} - {v^2 \over r}\overrightarrow{r}
+$$
+
+
+## 5 Force and Motion（力和运动）
+
+### 5.1 The Cause of Acceleration and Newton’s Laws（加速度的成因和牛顿定律）
