@@ -19,7 +19,7 @@ $$
 {L \over T} = {L \over T} + {L \over T^{2}} × T = {L \over T} + {L \over T} 
 $$
 因此表达式 $v = v_{0} + at$ 在维度上正确
-c.感悟：通过表达式中元素的单位可以推出结果的单位
+c.通过表达式中元素的单位可以推出结果的单位
 $\color{red}{通过结果的单位可以推出固定表达式中元素的幂}$
 
 
@@ -149,7 +149,7 @@ T = {2πr \over v} （周期）
 $$
 
 ### 4.4 Tangential andRadialAcceleration（切向加速度和径向加速度）
-粒子速度的方向和大小都发生变化时可解析为两个分量向量：$\color{red}切向分量向量$和$\color{red}径向分量向量$
+粒子速度的方向和大小都发生变化时可解析为两个分量向量：$\color{red}切向分量向量$ 和 $\color{red}径向分量向量$
 $$
 \overrightarrow{a} = \overrightarrow{a_t} + \overrightarrow{a_r}
 $$
@@ -171,4 +171,101 @@ $$
 c.牛顿第三定律：对于每一个动作，都必须有一个大小相等、方向相反的反应
 
 ### 5.2 SomeParticularForces（某些特定力量）
-a.法向力：
+a.法向力：法向力是防止块从表中掉下来的力，在打破表之前可以具有任何值
+$$
+N = W = mg
+$$
+b.摩擦焦点：
+$$
+f_s \leq  μ_s N
+$$
+c.张力的焦点（T）：
+绳索中的张力定义为绳索施加在身体上的力(摩擦不计)
+d.阻力对象（$F_D$）
+空气阻力：
+$$
+\color{red}F_D = {1 \over 2}CρAv^2
+$$
+$$
+v_t = \sqrt{2mg \over CρA}
+$$
+
+
+## 6 Work, Energy, and Power（工作、能源和电力）
+
+### 6.1 Work Done by a Constant Force（恒力所做的功）
+定义为位移方向上的力分量与位移大小的乘积
+a.重力做的功：
+$$
+W_F = mgs \qquad W_g = mgs
+$$
+b.摩擦力做的功：
+$$
+W_F = \overrightarrow{F} \overrightarrow{s} = Fscosθ
+$$
+
+### 6.2 Work Done by a Variable Force（由可变力完成的工作）
+a.一维分析：
+$$
+W \simeq \sum_{x_i}^{x_f}F(x) \Delta x = \int_{x_i}^{x_f}F(x)dx
+$$
+b.弹力做的功：
+$$
+F = -k_Hx(胡克定律)
+$$
+$$
+W_s = \int_{x_i}^{x_f}F(x)dx = \int_{x_i}^{x_f}(-k_Hx)dx = {1 \over 2}k_Hx_f^2 - {1 \over 2} k_Hx_i^2
+$$
+c.三维分析：
+$\overrightarrow{F} = F_x \overrightarrow{i} + F_y \overrightarrow{j} + F_z \overrightarrow{k}$
+$$
+W = \int_{r_i}^{r_f}dW = \int_{x_i}^{x_f}F_xdx + \int_{y_i}^{y_f}F_ydy + \int_{z_i}^{z_f}F_zdz
+$$
+
+### 6.3 Work-EnergyTheorem（功-能量定理）
+$$
+K = {1 \over 2}mv^2\\
+W = \Delta K = K_f - K_i
+$$
+
+### 6.4 Conservative Forces andPotential Energy（保守力和势能）
+a.保守力和非保守力
+（1）保守力：功只与运动物体的起点和终点的位置有关（重力等）
+（2）非保守力：不仅与运动物体起点和终点的位置以及力场的性质有关，而且还与物体运动所经过的路径有关（摩擦力等）
+b.势能
+$$
+W_c = - \Delta U = U_i - U_f = - \int_{i}^fF_xdx \:\: or \:\: F_x = - {dU \over dx}
+$$
+c.引力势能
+$$
+\Delta U = U_i - U_f = mg(y_f - y_i) = mg \Delta y
+$$
+d.弹性势能
+$$
+\Delta U = U_i - U_f = {1 \over 2} k_Hx_f^2 - {1 \over 2} k_Hx_i^2
+$$
+
+### 6.5 Conservation of Mechanical Energy（机械能量守恒）
+a.当只有一个保守的力作用系统时，动能和势能才能发生变化。然而，他们的和，系统的机械能量E，并没有改变：
+$E_i = E_f$
+b.如果多于一个保守的力作用于系统，其中每个系统都与势能相提并论，那么机械能的守恒就会采取这种形式:
+$$
+K_i = \sum U_i = K_f = \sum U_f
+$$
+
+### 6.6 WorkDonebyNon-conservativeForces（非保守力所做的功）
+a.所有非守恒力 W（或 $W_{nc}$）所做的功等于系统总机械能的变化:
+$$
+W_{nc} = \Delta E = E_f - E_i
+$$
+
+### 6.7 Conservation of Energy（能量守恒）
+扩展系统后摩擦力转换成的热量也会在扩展的系统内传递，达到能量守恒：
+$$
+\Delta E_tot = \Delta K + \Delta U + \Delta E_int（独立系统的能量守恒）
+$$
+
+### 6.8 power（功率）
+$ \overline{P} = {\Delta W \over \Delta t} $
+$ p = \lim_{\Delta t \to 0} {\Delta W \over \Delta t} = {dW \over dt} $
+$ p = \overrightarrow{F} \overrightarrow{v} = Fvcosθ $
