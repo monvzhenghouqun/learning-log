@@ -2,6 +2,7 @@
 
 
 ## 1. Dimensions and Units
+
 ### 1.1 The International System of Units（国际单位制）
 a.物理中的常用单位，如时间(s)、长度(m)、质量等(kg)
 b.单位的前缀，如$peta-$ : $10^{15}$、$tera-$ : $10^{12}$、$pico-$ : $10^{-12}$、 $nan0-$ : $10^{-9}$
@@ -24,6 +25,7 @@ $\color{red}{通过结果的单位可以推出固定表达式中元素的幂}$
 
 
 ## 2 Vector（向量）
+
 ### 2.1 Vectors andScalars（向量和标量）
 a.向量：大小、方向（速度，加速度，位移等）
 b.标量：大小（路程等）
@@ -269,3 +271,89 @@ $$
 $ \overline{P} = {\Delta W \over \Delta t} $
 $ p = \lim_{\Delta t \to 0} {\Delta W \over \Delta t} = {dW \over dt} $
 $ p = \overrightarrow{F} \overrightarrow{v} = Fvcosθ $
+
+
+## 7 Linear Momentum, Collisions, andCenterofMass（线性动量、碰撞和质心）
+
+### 7.1  Linear Momentum and Impulse（线性动量和冲量）
+a.线性动量（动量）是作用于粒子等于乘积 m→ V 每单位时间的变化：
+$ \overrightarrow{P} = m \overrightarrow{v} $
+b.冲量（动量变化量）：
+$ \overrightarrow{J} =  \int_{t_i}^{t_f}\overrightarrow{F} dt = \overline{\overrightarrow{F}} \Delta t = \Delta \overrightarrow{P} $ $\quad$ and $\quad$ $\overline{\overrightarrow{F}} = {\overrightarrow{P} \over \Delta t} $
+
+### 7.2 Conservation of Linear Momentum（线性动量守恒）
+孤立的粒子系统的总线性动量保持不变
+
+### 7.3  Conservation of Momentumand Energy in Collisions（动量守恒和碰撞中的能量）
+
+#### 7.3.1 ElasticCollisions in One and Two Dimensions（一维和二维中的弹性碰撞）
+在两个迎面碰撞的小物体的弹性碰撞中应用动量和动能守恒定律：
+$$
+v_1 - v_2 = - (v_1^{'} - v_2^{'})\\
+v_1^{'} = {{m_1 - m_2} \over {m_1 + m_2}}v_1 + {{2m_2} \over {m_1 + m_2}}v_2\\
+v_2^{'} = {{2m_1} \over {m_1 + m_2}}v_1 + {{m_2 - m_1} \over {m_1 + m_2}}v_2
+$$
+
+#### 7.3.2 Inelastic Collisions（非弹性碰撞）
+a.部分初始动能被转移到其他类型的能量（如热能或势能），或部分内能（如化学或核能）以动能的形式释放
+b.如果两个对象在碰撞后粘在一起，则碰撞称为完全非弹性碰撞,即使动能不守恒那些碰撞，总能量守恒
+
+### 7.4 Center of Mass(CM)（质心）
+$$
+\overrightarrow{r_{CM}}（三维向量） = {\sum{m_i \overrightarrow{r_i}} \over M（总质量）} = {1 \over M} \int \overrightarrow{r} dm
+$$
+
+### 7.5  Dynamics of the Center of Mass（动态的质心）
+a.系统上的净外力等于系统的总质量乘以其质心的加速度
+b.对于总质量为 M 的粒子（或扩展物体）系统，质心点的存在就好像所有质量 M 都集中在该点上，并且所有外力都作用在同一个点上
+c.粒子系统：总线性动量 = 总质量 * 质心的速度
+d.扩展对象：线性动量 = 其总质量 * 其质心的速度
+
+### 7.6 Systems of Variable Mass（变质量系统）
+
+#### 7.6.1 Systems of Increasing Mass（增质量系统）
+$$
+\int \overrightarrow{F_{ext}} + (\overrightarrow{u} - \overrightarrow{v}){dM \over dt} = M{d \overrightarrow{v} \over dt}
+$$
+
+####  Systems of Decreasing Mass;Rocket Propulsion（火箭推进）
+$$
+\int \overrightarrow{F_{ext}} + \overrightarrow{v_{rel}}{dM \over dt} = M{d\overrightarrow{v} \over dt}
+$$
+
+
+## 8 Rotational Motion（旋转运动）
+
+### 8.1 Radian Measures（弧度测量）
+$1 rev= 360◦ = 2π rad ⇒ 180◦ =π rad$
+$1◦ = (π/180)rad \simeq 0.02rad$
+$1rad= 180◦/π \simeq 57.3◦.$
+
+### 8.2  Rotational Kinematics;Angular Quantities（旋转运动学;角度量）
+a.角度位置：以弧度表示的θ
+b.角度位移：$\Delta θ = θ_2 - θ_1$
+c.角速度：
+$$
+{ω = \lim_{\Delta t \rightarrow 0} {\Delta θ \over \Delta t} = {dθ \over dt}} 
+\quad \equiv \quad
+{θ_f - θ_i = \int_{t_i}^{t_f} ω dt}
+$$
+d.角度加速度：
+$$
+{α = \lim_{\Delta t \rightarrow 0}{\Delta ω \over \Delta t} = {dω \over dt}}
+\quad \equiv \quad
+{ω_f - ω_i = \int_{t_i}^{t_f} α dt}
+$$
+
+### 8.3 Constant AngularAcceleration（恒定角加速度）
+与线性量的定义相似:θ、ω、α $\Rightarrow$ x、v、a
+
+### 8.4 Angular Vectors（角度向量）
+通过将旋转轴选为角速度矢量的方向，将角速度视为矢量
+
+### 8.5 Relating Angular andLinearQuantities（有关角和线性量）
+$ v = rω $
+$ T = {2π \over ω}, f = {1 \over T} = {ω \over 2π}  
+$ a_t = rα = rω^2 $ (α = dω/dt)
+
+### 8.6  Rotational Dynamics;Torque（旋转动力学）
