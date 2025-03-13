@@ -353,7 +353,56 @@ $$
 
 ### 8.5 Relating Angular andLinearQuantities（有关角和线性量）
 $ v = rω $
-$ T = {2π \over ω}, f = {1 \over T} = {ω \over 2π}  
-$ a_t = rα = rω^2 $ (α = dω/dt)
+$ T = {2π \over ω}, f = {1 \over T} = {ω \over 2π} $
+$ a_t = rα = rω^2 (α = dω/dt) $
 
 ### 8.6  Rotational Dynamics;Torque（旋转动力学）
+扭矩：旋转的速率取决于所施加力的大小和方向，以及该力从旋转轴施加的距离
+(顺时针为负数，逆时针正数)
+$ \overrightarrow{τ} = \overrightarrow{r} \overrightarrow{f} = rFsinθ$
+
+
+### 8.7 Newton’s Second Law for Rotation（牛顿的旋转第二定律）
+扭矩：
+$$
+\sum τ = Iα = \sum m_ir_i^2 α（I为转动惯量）
+$$
+$$
+\sum τ = Iα = \int r^2dm
+$$
+平行轴定理：
+$$
+I = I_{CM} + Mh^2
+$$
+Thin hoopor thin cylindrical shell(薄箍或薄圆柱壳):
+$ I_{CM} = M R^2 $
+Hollow cylinder(空心圆柱体):
+$ I_{CM} = {1 \over 2}M(R_1^2 + R_2^2) $
+Thin hoop(薄箍):
+$ I_{CM} = {1 \over 2}MR^2 $
+Solid cylinder(实心圆柱体):
+$ I_{CM} = {1 \over 4}MR^2 + {1 \over 12}ML^2 $
+Solid cylinder or disk(实心圆柱体或圆盘):
+$ I_{CM} = {1 \over 2}MR^2 $
+Rectangular plate(矩形板):
+$ I_{CM} = {1 \over 12}M(a^2 + b^2) $
+Thin rod(细杆):
+$ I_{CM} = {2 \over 5}MR^2 $
+Thin spherical shell(薄球形壳):
+$ I_{CM} = {2 \over 3}MR^2 $
+
+补：$\color{red}可通过 \sum τ = rF = Iα 计算未知量$
+
+### 8.8  Kinetic Energy,Work,and Power in Rotation（动能、功和旋转中的动力）
+a.旋转动能:类似于平移动能（$ {1 \over 2} mv^2 $）
+$$
+K_R = {1 \over 2} Iω^2
+$$
+b.旋转做的功：
+$$
+W = \int_{θ_i}^{θ_f} τdθ \quad or \quad W = \int_{ω_i}^{ω_f}Iωdω = {1 \over 2}Iω_f^2 - {1 \over 2}Iω_i^2 = \Delta K_R
+$$
+c.旋转的功率：
+$$
+P = {dW \over dt} = τω
+$$
