@@ -387,11 +387,14 @@ $ I_{CM} = {1 \over 2}MR^2 $
 Rectangular plate(矩形板):
 $ I_{CM} = {1 \over 12}M(a^2 + b^2) $
 Thin rod(细杆):
+绕中心旋转:$ I_{CM} = {1 \over 12}ML^2 $
+绕头旋转:$ I_{CM} = {1 \over 3}ML^2 $
+Solid sphere(实心球):
 $ I_{CM} = {2 \over 5}MR^2 $
 Thin spherical shell(薄球形壳):
 $ I_{CM} = {2 \over 3}MR^2 $
 
-补：$\color{red}可通过 \sum τ = rF = Iα 计算未知量$
+补：$\color{red} 可通过 \sum τ = rF = Iα 计算未知量$
 
 ### 8.8  Kinetic Energy,Work,and Power in Rotation（动能、功和旋转中的动力）
 a.旋转动能:类似于平移动能（$ {1 \over 2} mv^2 $）
@@ -399,10 +402,55 @@ $$
 K_R = {1 \over 2} Iω^2
 $$
 b.旋转做的功：
+($ dW = Fsinφ rdθ $)
 $$
 W = \int_{θ_i}^{θ_f} τdθ \quad or \quad W = \int_{ω_i}^{ω_f}Iωdω = {1 \over 2}Iω_f^2 - {1 \over 2}Iω_i^2 = \Delta K_R
 $$
 c.旋转的功率：
+($rpm = {rev（转） \over min} $, $1rev = 2πrad = 360^。$)
+($ 1HP（马力） = 0.746kW $)
 $$
 P = {dW \over dt} = τω
 $$
+
+### 8.9 Rolling Motion（滚动运动）
+a.以旋转和平移组合滚动：
+摆线：车轮在平滑地面不打滑地滚动且重心MC呈直线时圆周上点Q的运动路线
+b.以纯旋转滚动：
+$$
+K_{Roll}(滚动动能) = {1 \over 2}I_Pω^2 = {1 \over 2}I_{CM}ω^2 + {1 \over 2}Mv_{CM}^2  
+$$
+c.摩擦滚动：
+当车轮的线速度$ v_{CM} $或角速度 ω发生变化时，摩擦力倾向于在接触点 P 处滑动车轮：
+(1).ω的增加或减少会使触点P向某方向滑动，而摩擦力会oppose这个趋势（如：顺时针增加的ω会使P有向左滑动的趋势，因此摩擦力向右以对抗它）
+(2).$ v_{CM} $的增加或减少所引起的摩擦力与滑块相似
+
+
+## 9 Angular Momentum（角动量）
+
+### 9.1 Angular Momentum of Rotating Systems（旋转系统的角度动量）
+
+#### 9.1.1 Angular Momentum of a Particle（粒子的角动量）
+$$
+\overrightarrow{L}(角动量) = \overrightarrow{r}(放置向量) \times \overrightarrow{p}(动量mv) = rpsinθ(θ是r和p的夹角) \\ 
+\sum \overrightarrow{τ} = {d\overrightarrow{L} \over dt}(Single \ particle)
+$$
+
+#### 9.1.2 Angular Momentum of a System of Particles（粒子系统的角动量）
+$$
+\sum \overrightarrow{τ_{CM}} = {d\overrightarrow{L_{CM}} \over dt} (System \ of \ particles)(Even \ if \ CM \ is \ accelerating)
+(基于牛顿第三定律，系统的内力互相抵消)
+$$
+
+#### 9.1.3 Angular Momentum of a Rotating Rigid Body（旋转刚体的角动量）
+$$
+L_Z = \sum r_ip_i = \sum \Delta m_ir_iv_i = \sum (\Delta m_ir_i^2)ω = Iω \\
+\sum \overrightarrow{τ_{ext}} = {d\overrightarrow{L_Z} \over dt} = I \overrightarrow{α}
+$$
+
+### 9.2  Conservation of Angular Momentum（角动量守恒）
+如果作用在系统上的净外部扭矩为零（即孤立系统）则系统的总角动量在大小和方向上保持不变
+
+### 9.3 The Spinning Top and Gyroscope（陀螺和陀螺仪）
+陀螺旋转时其法向力位于旋转轴上，因此其r=0产生零扭矩。此时：$ \overrightarrow{τ} = M \overrightarrow{g} $
+![alt text](image.png)
