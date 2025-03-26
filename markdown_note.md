@@ -368,11 +368,12 @@ $$
 \sum τ = Iα = \sum m_ir_i^2 α（I为转动惯量）
 $$
 $$
-\sum τ = Iα = \int r^2dm
+\sum τ = Iα = α\int r^2dm
 $$
 平行轴定理：
 $$
-I = I_{CM} + Mh^2
+I = I_{CM} + Mh^2 = \int r^2dm \\
+(h为与转轴距其在CM上平行轴的距离)
 $$
 Thin hoopor thin cylindrical shell(薄箍或薄圆柱壳):
 $ I_{CM} = M R^2 $
@@ -432,10 +433,10 @@ c.摩擦滚动：
 
 #### 9.1.1 Angular Momentum of a Particle（粒子的角动量）
 $$
-\overrightarrow{L}(角动量) = \overrightarrow{r}(放置向量) \times \overrightarrow{p}(动量mv) = rpsinθ(θ是r和p的夹角) \\ 
+\overrightarrow{L}(角动量) = \overrightarrow{r}(放置向量) \times \overrightarrow{p}(动量 = mv) = rpsinθ(θ是r和p的夹角) \\ 
 \sum \overrightarrow{τ} = {d\overrightarrow{L} \over dt}(Single \ particle)
 $$
-
+![alt text](image-1.png)
 #### 9.1.2 Angular Momentum of a System of Particles（粒子系统的角动量）
 $$
 \sum \overrightarrow{τ_{CM}} = {d\overrightarrow{L_{CM}} \over dt} (System \ of \ particles)(Even \ if \ CM \ is \ accelerating)
@@ -449,8 +450,10 @@ L_Z = \sum r_ip_i = \sum \Delta m_ir_iv_i = \sum (\Delta m_ir_i^2)ω = Iω \\
 $$
 
 ### 9.2  Conservation of Angular Momentum（角动量守恒）
-如果作用在系统上的净外部扭矩为零（即孤立系统）则系统的总角动量在大小和方向上保持不变
+如果作用在系统上的净外部扭矩为零（即独立系统）则系统的总角动量在大小和方向上保持不变
 
 ### 9.3 The Spinning Top and Gyroscope（陀螺和陀螺仪）
-陀螺旋转时其法向力位于旋转轴上，因此其r=0产生零扭矩。此时：$ \overrightarrow{τ} = M \overrightarrow{g} $
+陀螺旋转时其法向力位于旋转轴上，因此其r=0产生零扭矩。此时角动量沿r向量向外与重力产生力矩$ \overrightarrow{τ_{ext}} = \overrightarrow{r} \times M \overrightarrow{g} $垂直于r与mg的平面，而角动量随着力矩的方向变化（力矩与角动量相当于加速度与速度）
 ![alt text](image.png)
+其中 $ dL = L sinθ dφ $ 
+将这个表达式带入进动角速度$ \Omega = {dφ \over dt} $
