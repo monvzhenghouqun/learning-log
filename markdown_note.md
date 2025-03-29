@@ -453,7 +453,83 @@ $$
 如果作用在系统上的净外部扭矩为零（即独立系统）则系统的总角动量在大小和方向上保持不变
 
 ### 9.3 The Spinning Top and Gyroscope（陀螺和陀螺仪）
-陀螺旋转时其法向力位于旋转轴上，因此其r=0产生零扭矩。此时角动量沿r向量向外与重力产生力矩$ \overrightarrow{τ_{ext}} = \overrightarrow{r} \times M \overrightarrow{g} $垂直于r与mg的平面，而角动量随着力矩的方向变化（力矩与角动量相当于加速度与速度）
+陀螺旋转时其法向力位于旋转轴上，因此其r=0产生零扭矩。此时角动量沿r向量向外与重力产生力矩$ \overrightarrow{τ_{ext}} = \overrightarrow{r} \times M \overrightarrow{g} = rMgsinθ$垂直于r与mg的平面，而角动量随着力矩的方向变化积累（力矩与角动量相当于加速度与速度）
 ![alt text](image.png)
 其中 $ dL = L sinθ dφ $ 
-将这个表达式带入进动角速度$ \Omega = {dφ \over dt} $
+将这个表达式带入进动(precession)角速度$ \Omega = {dφ \over dt} = {τ_{ext} \over Lsinθ} = {Mgr \over L} $
+$$
+\Omega = {Mgr \over Iω} 
+$$ (当$ \Omega << ω $时成立)
+由$ \Omega = {2 \pi \over T_p} \quad ω = {2 \pi \over T_s} $ (${T_p}$ 为进动周期， ${T_s}$ 为自旋周期) 可得：
+$$
+T_p = {4 \pi^2 I \over MgrT_s}
+$$
+
+
+## 10 Mechanical Properties of Matter（物质的机械特性）
+物体状态通常分为：固体(soild)、液体(liquid)、气体(gas)
+
+### 10.1 Density and Relative Density （密度和相对密度）
+如果质量m均匀地分散在体积V中，则：
+$$
+ρ = {m \over V}
+$$
+比重(SG)：物质的密度是纯水的多少倍
+$$
+SG = {ρ \over ρ_{water}}
+$$
+
+### 10.2 Elastic Properties of Solids（固体的弹性）
+(1)stress（应力）：垂直作用在物体单位面积上的外力大小
+(2)strain（应变）：在应力作用下的单位变形量
+(3)Elastic modulus（弹性模量）：材料在受到负荷变形时产生的阻力的衡量
+ = $ {Stress \over Strain} $
+(4)Young’s Modulus（杨氏模量）：描述固体材料抵抗形变能力的物理量
+(5)Shear Modulus（剪切/切变/刚性模量）：描述材料在剪切应力作用下抵抗剪切变形的能力
+ = $ {τ(剪切应力) \over γ(剪切应变)} $
+(6)Bulk Modulus（体积模量）：描述固体（或者液体）对变化起始量的阻力
+
+#### 10.2.1 Young’s Modulus:Elasticity in Length（杨氏模量：长度弹性）
+描述固体对其长度变化的抵抗力，这表示其刚度
+当外力F⊥垂直于杆的横截面积 A 施加时，其内力会抵抗其变形。当杆的长度增加时时，杆达到平衡，垂直外力的大小 F⊥ 正好平衡了内力：
+$$
+Tensile stress(拉伸应力) = {F_⊥ \over A}(N/m^2)
+\\
+Tensile strain(拉伸应变) = {\Delta L \over L}
+$$
+$$
+Y(杨氏模量) = {Tensile stress \over Tensile strain}
+$$
+杆在形变时长度增加半径减少，其中
+$$
+μ(泊松比) = {Lateral strain \over Linear strain} = -{\Delta r / r \over \Delta L / L} = -{L dr \over r dL}
+$$
+![alt text](image-2.png)
+
+#### 10.2.2 Shear Modulus:Elasticity of Shape（剪切模量：形状的弹性）
+一个圆柱形杆受线性或扭转剪切应力变形，这是由于平行于表面积A的力F引起的。当剪切力F的作用与内部剪切力完全平衡时，杆的形状将达到平衡：
+$$
+Shearing stress = {Tangential acting force \over Area of surface being sheared} = {F_{||} \over A}(N/m^2)
+\\
+Shearing strain = {Distance sheared \over Distance between surfaces} = {\Delta x \over h} = tanθ \approx θ(适用于微小应变)
+$$
+$$
+S(剪切模量) = {Shearing stress \over Shearing strain} = {F_{||}/A \over \Delta x/h}(N/m^2)
+$$
+![alt text](image-3.png)
+
+#### 10.2.3 Bulk Modulus:Volume Elasticity（体积模量：体积弹性）
+压力 P 定义为垂直作用在物体的单位面积上的力：
+$$
+P = {F_⊥ \over A}(N/m^2)
+$$
+一个体积为V的立方体受到均匀压力P。当每个面的F⊥增加时P随之增加，V随之减小
+$$
+Volume stress = \Delta P = {\Delta F_⊥ \over A}
+\\
+Volume strain = -{\Delta V \over V}
+$$
+$$
+B(体积模量) = {Volume stress \over Volume strain} = {\Delta F_⊥/A \over \Delta V/V} = -{\Delta P \over \Delta V/V} = -V{dP \over dV}
+$$
+![alt text](image-4.png)
